@@ -1,0 +1,22 @@
+{
+  "name": "sakurai",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass --include-path scss css/style.scss css/style.css",
+    "publish": "node-sass --include-path scss css/style.scss css/style.css --output-style compressed",
+    "watch": "node-sass --include-path scss css/style.scss css/style.css -w",
+    "autoprefixer": "postcss css/style.scss --use autoprefixer -o css/style.scss",
+    "jsmin": "uglifyjs --compress warnings=false --mangle --output js/main.min.js -- js/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "clip-path": "^1.1.0",
+    "node-sass": "^4.6.0",
+    "postcss-cli": "^4.1.1",
+    "uglify-js": "^3.1.8"
+  }
+}
